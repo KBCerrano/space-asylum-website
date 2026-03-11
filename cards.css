@@ -4,7 +4,8 @@
 
 .cards-section{
   padding:60px 20px;
-  /*background-image: url("images/stars.jpg");*/
+  background-image: url("images/starscape.png");
+  background-size: cover;
 }
 
 /* CARD ROW */
@@ -88,3 +89,16 @@
   box-shadow:0 0 10px rgba(0,255,85,0.5);
 }
 
+
+
+
+.badge-container{
+  width:300px;
+  height:200px;
+}
+
+.badge-container img{
+  width:100%;
+  height:100%;
+  object-fit:contain;
+}
