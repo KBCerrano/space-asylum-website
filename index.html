@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space Asylum | Cerrano</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="cards.css">
+    <link rel="stylesheet" href="progress-bar.css">
+    <link rel="stylesheet" href="button.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="animations.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
+
+<header class="site-header">
+
+</header>
+
+
+<body style="background-color: black;">
+
+<nav class="navbar">
+        <a href="index.html" style = "text-decoration: none;"><div class="nav-logo">SPACE ASYLUM</div></a>
+
+
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="Support.html">Support</a></li>
+        </ul>
+    </nav>
+
+
+
+
+<!-- Progress bar directly under navbar -->
+    <div class="progress-track">
+        <div class="progress-bar" id="progressBar"></div>
+    </div>
+
+
+
+    <section class="hero" style="height: 100">
+
+        <!-- Progress bar directly under navbar -->
+
+        <div class="hero-stars"></div>
+
+        <div class="feature-text">
+            <h1 class="fade-up" class="feature-title" class="fade-in">
+                <span style="color: white; font-size: 30px;">Enter the World of<br></span> <span style = "font-size: 70px;" class="text-green-highlight">SPACE ASYLUM</span>
+            </h1>
+            <p class = "text-container" style="text-align: center; color: white">
+                The hub for everything Space Asylum - the science fiction space opera comic book series.
+            </p>
+            <br>
+
+            <div style="text-align: center;">
+                <button class="sa-button">Read the Story →</button>
+                <button class="sa-button-hollow">See More</button>
+            </div>
+        </div>
+
+    </section>
+
+
+
+
+    <section>
+        <div class="section-container">
+
+            <div class="text-column">
+                <h2 class="fade-up" style="text-align: left; color: white;">Welcome to the <span
+                        style="color: #00FF55">Year 2220.<span></h2>
+                <p class = "text-container" style="color: white;">
+                    Captain Tom was once the captain of the Sutallite, a renowned space crew - until a mysterious enemy
+                    in a golden spacesuit destroyed his mothership. Months later, haunted by the past, Tom embarks on a
+                    perilous trek through the cosmos.
+                    <br><br>
+                    His mission is simple yet daunting: re-unite his now separated friends and reforge the crew they once
+                    shared. But with deadly foes stalking his every move, Tom will learn that nostalgia can come at a
+                    heavy price.
+                </p>
+                <br>
+                <button class="sa-button" style="text-align: left;">Read Chapter One →</button>
+            </div>
+
+            <div class="image-column">
+                <img src="images/Instagram post - 1.png" alt="Spaceship">
+            </div>
+
+        </div>
+    </section>
+
+
+
+
+    <section class="cards-section">
+        <h1 style="color: white;" class="fade-up">CHAPTERS</h1>
+
+        <h2 style="color: white;" class="fade-up">ACT ONE</h2>
+
+        <div class="cards-container">
+
+            <div class="card" style="border: 3px solid #00FF55;">
+                <img src="images\track1Thumbnail.png" class="card-image">
+
+                <div class="card-content">
+                    <h1 class="card-title" style = "color: #00FF55">Chapter One</h1>
+                    <p class="p-white"><strong>The Sutallite Disaster</strong></p>
+
+                    <p class="p-white"><i>Release Date: <span style = "color: rgb(194, 194, 194)">June 2026</span></i></p>
+
+                    <a href="Chapter 1.html">
+                        <button class="sa-button">Read More →</button>
+                    </a>
+                </div>
+            </div>
+
+            <div class="card" style="border: 3px solid rgb(60, 180, 255);">
+                <img src="images\track1Thumbnail.png" class="card-image">
+
+                <div class="card-content">
+                    <h1 class="card-title" style = "color: rgb(60, 180, 255)">Chapter One</h1>
+                    <p class="p-white"><strong>A Perfectly Elastic Collision</strong></p>
+
+                    <p class="p-white"><i>Release Date: <span style = "color: rgb(194, 194, 194)">Coming Soon...</span></i></p>
+
+                    <a href="Chapter 1.html">
+                        <button class="sa-button">Read More →</button>
+                    </a>
+                </div>
+            </div>
+
+            <div class="card" style="border: 3px solid rgb(255, 0, 255);">
+                <img src="images\track1Thumbnail.png" class="card-image">
+
+                <div class="card-content">
+                    <h1 class="card-title" style = "color: rgb(255, 0, 255)">Chapter One</h1>
+                    <p class="p-white"><strong>Rock City Rampage</strong></p>
+
+                    <p class="p-white"><i>Release Date: <span style = "color: rgb(194, 194, 194)">Coming Soon...</span></i></p>
+
+                    <a href="Chapter 1.html">
+                        <button class="sa-button">Read More →</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-container">
+        <h2>What Readers Are Saying</h2>
+
+  <blockquote>
+    "An exciting sci-fi adventure with a lot of personality."
+  </blockquote>
+
+  <blockquote>
+    "Great worldbuilding and characters. Can't wait for the next chapter."
+  </blockquote>
+    </section>
+
+
+
+    <script>
+  const progressBar = document.getElementById("progressBar");
+
+  window.addEventListener("scroll", () => {
+    const scrollTop = window.scrollY;
+    const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+    const scrollPercent = (scrollTop / docHeight) * 100;
+
+    progressBar.style.width = scrollPercent + "%";
+  });
+</script>
+
+</body>
+
+<footer class="footer">
+
+    <div class="footer-container">
+
+        <!-- Left Column -->
+        <div class="footer-left">
+            <div class="nav-logo" style="text-align: left;">SPACE ASYLUM</div>
+            <p style="color:white; text-align: left;">
+                Written by K.B Cerrano
+                <br>
+                <a href="mailto:kbcerrano@gmail.com">kbcerrano@gmail.com</a>
+                <br>
+                © Copyright 2026 - All Rights Reserved By KBC Books.
+            </p>
+        </div>
+
+        <!-- Right Column -->
+        <div class="footer-right">
+            <div class="link-list">
+
+                <div class="link-item">
+                    <a href="https://instagram.com">
+                        <img src="images\icons\instagram-icon.png" alt="Instagram">
+                    </a>
+                    <span>Follow on Instagram</span>
+                </div>
+
+                <div class="link-item">
+                    <a href="https://twitter.com">
+                        <img src="images\icons\x-icon.png" alt="X">
+                    </a>
+                    <span>Follow on X</span>
+                </div>
+
+                <div class="link-item">
+                    <a href="https://facebook.com">
+                        <img src="images\icons\facebook-icon.png" alt="Facebook">
+                    </a>
+                    <span>Join on Facebook</span>
+                </div>
+
+                <div class="link-item">
+                    <a href="support.html">
+                        <img src="images\icons\sa-logo-green.png" alt="Support">
+                    </a>
+                    <span>Support the Project</span>
+                </div>
+
+            </div>
+
+            </p>
+        </div>
+
+    </div>
+
+    </div>
+
+    <!-- Return To Top Button -->
+    <a href="#" class="back-to-top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </a>
+
+</footer>
+
+</html>

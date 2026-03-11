@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space Asylum | Cerrano</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="cards.css">
+    <link rel="stylesheet" href="progress-bar.css">
+    <link rel="stylesheet" href="button.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="animations.css">
+        <link rel="stylesheet" href="spin.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
+
+</head>
+
+
+<header class="site-header">
+
+    <nav class="navbar">
+        <div class="nav-logo">SPACE ASYLUM</div>
+        
+
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="#">Support</a></li>
+        </ul>
+    </nav>
+
+    <!-- Progress bar directly under navbar -->
+    <div class="progress-track">
+        <div class="progress-bar" id="progressBar"></div>
+    </div>
+
+</header>
+
+
+<body style = "background-color: black;">
+    
+    <section class = "section-container">
+
+        <div class="feature-text">
+            <h1 class="fade-up" class="fade-in">
+                <span style = "color: white; text-align: left;"></span> <span class="text-green-highlight">About the Author</span>
+            </h1>
+ 
+                <p class = "text-container" style = "text-align: left; color: white">
+                    K.B Cerrano is canadian born comic book artist of science fiction and fantasy all with a touch of comedy. Author of his debut science fiction space opera comic book <i>Space Asylum</i>.
+                    <br>Cerrano has a Honours Bsc in Statistics and minor in philosophy from University of Ottawa in 2025. His work is inspired by a love of philosophy and science set in fantasy worlds created for all audiences with intellectual comedies- powered by a love of coffee.
+              </div>
+
+    
+   </section>
+
+
+<section>
+    <div class="section-container">
+
+    <div class="text-column">
+      <h1 style = "text-align: left" class="fade-up" class="fade-in" >
+        The Vision</h1>      
+        <p  class = "p-white" style = "text-align: left;">
+        Space Asylum is my passionate debut project - a comic book series I originally started during the 2019 pandemic (while also studying the perilously annoying proofs of limit theorems).
+        <br><br>
+        It’s a science-fiction series that blends action, humor, and philosophical ideas into a loveable story that continues to grow. Join Captain Tom as he travels across universe. From desert planets and crowded neon cities to the orderly bases of the Universal Government and the lawless regions of the outer rim. Meet loveable bantering friends, mysterious enemies with hidden motives, and everything in between. 
+        <br><br>
+        This is just the beginning!
+      </p>
+    </div>
+
+    <div class="image-column">
+      <!--<img src="images/Instagram post - 1.png" alt="Spaceship"-->
+      <div class = "blackhole-container">
+
+          <img src="images\blackhole-middle.png" class="spin-slow" alt="Spaceship">
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+    <!--This is a javascript for the progress bar. It is important to have this at the bottom of the body tag so that HTML is loaded first and then the bar is applied at the end.-->
+    <script src="progress-bar.js"></script>
+
+    <script>
+        const disc = document.getElementById("scrollSpinImage");
+
+        window.addEventListener("scroll", () => {
+            const rotation = window.scrollY / 2; // adjust speed
+
+            disc.style.transform = `rotate(${rotation}deg)`;
+        });
+    </script>
+
+
+
+</body>
+
+<footer class="footer">
+
+  <div class="footer-container">
+
+    <!-- Left Column -->
+    <div class="footer-left">
+      <div class="nav-logo" style = "text-align: left;">SPACE ASYLUM</div>
+      <p style = "color:white; text-align: left;">
+        Written by K.B Cerrano
+        <br>
+        <a href="mailto:kbcerrano@gmail.com">kbcerrano@gmail.com</a>
+        <br>
+        © Copyright 2026 - All Rights Reserved By KBC Books.
+      </p>
+    </div>
+
+    <!-- Right Column -->
+    <div class="footer-right">
+
+      <div class="social-icons">
+        <p style = "color: white; text-align: left;">
+
+        <a href="https://www.instagram.com/official_space_asylum/"><i class="fa-brands fa-instagram"></i></a>
+
+        <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+
+        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- Return To Top Button -->
+  <a href="#" class="back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </a>
+
+</footer>
+
+</html>

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space Asylum | Cerrano</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="cards.css">
+    <link rel="stylesheet" href="progress-bar.css">
+    <link rel="stylesheet" href="button.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="animations.css">
+    <link rel="stylesheet" href="spin.css">
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
+
+
+
+</head>
+
+
+<header class="site-header">
+
+    <nav class="navbar">
+        <a href="index.html" style="text-decoration: none;">
+            <div class="nav-logo">SPACE ASYLUM</div>
+        </a>
+
+
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="Support.html">Support</a></li>
+        </ul>
+    </nav>
+
+    <!-- Progress bar directly under navbar -->
+    <div class="progress-track">
+        <div class="progress-bar" id="progressBar"></div>
+    </div>
+
+
+
+
+
+</header>
+
+
+<body style="background-color: black;">
+
+
+
+    <section>
+        <div class="section-container">
+            <div class="text-column">
+                <h1 class="fade-up" style="text-align: left; color: white;">Help Expand the <span style="color: #00FF55">Space Asylum Universe<span>
+                </h1>
+                <p class="text-container" style="color: white;">
+                    If you enjoy the Space Asylum and want to see the universe continue to grow, consider supporting!
+                    <br>Your support helps make it possible to support the writing, drawing, and production necessary to
+                    bring this world to you!
+                    <br><br><strong>Kickstarter</strong> allows the project to grow and gives me the ability to bring
+                    the universe of Space Asylum to readers everywhere.
+                </p>
+                <br>
+                <button class="sa-button" style="text-align: left;">Read Chapter One →</button>
+            </div>
+
+            <div class="image-column" class="image-container">
+                <img src="images\Mal-and-tom.png" alt="Tom and Malhajer">
+            </div>
+
+        </div>
+    </section>
+
+    
+    
+    <section class = "section-container">
+        
+        <h2 class="fade-up" style="text-align: left; color: white;">Support Today!</h2>        
+        <a href="https://www.gofundme.com/f/launch-the-space-asylum-comic-series?attribution_id=sl:16804a34-6644-4982-a900-869a72e7b60d&lang=en_CA&ts=1773184301&utm_campaign=fp_sharesheet&utm_content=amp20_control&utm_medium=customer&utm_source=copy_link" target="_blank">
+            <button class="sa-button">Support →</button>
+        </a>
+    </section>
+
+
+
+    
+
+ 
+
+
+
+
+
+    <script>
+        const disc = document.getElementById("scrollSpinImage");
+
+        window.addEventListener("scroll", () => {
+            const rotation = window.scrollY / 2; // adjust speed
+
+            disc.style.transform = `rotate(${rotation}deg)`;
+        });
+    </script>
+
+    <!--This is a javascript for the progress bar. It is important to have this at the bottom of the body tag so that HTML is loaded first and then the bar is applied at the end.-->
+    <script src="progress-bar.js"></script>
+
+
+</body>
+
+<footer class="footer">
+
+    <div class="footer-container">
+
+        <!-- Left Column -->
+        <div class="footer-left">
+            <div class="nav-logo" style="text-align: left;">SPACE ASYLUM</div>
+            <p style="color:white; text-align: left;">
+                Written by K.B Cerrano
+                <br>
+                <a href="mailto:kbcerrano@gmail.com">kbcerrano@gmail.com</a>
+                <br>
+                © Copyright 2026 - All Rights Reserved By KBC Books.
+            </p>
+        </div>
+
+        <!-- Right Column -->
+        <div class="footer-right">
+            <div class="link-list">
+
+                <div class="link-item">
+                    <a href="https://instagram.com">
+                        <img src="images\icons\instagram-icon.png" alt="Instagram">
+                    </a>
+                    <span>Follow on Instagram</span>
+                </div>
+
+                <div class="link-item">
+                    <a href="https://twitter.com">
+                        <img src="images\icons\x-icon.png" alt="X">
+                    </a>
+                    <span>Follow on X</span>
+                </div>
+
+                <div class="link-item">
+                    <a href="https://facebook.com">
+                        <img src="images\icons\facebook-icon.png" alt="Facebook">
+                    </a>
+                    <span>Join on Facebook</span>
+                </div>
+
+                <div class="link-item">
+                    <a href="support.html">
+                        <img src="images\icons\sa-logo-green.png" alt="Support">
+                    </a>
+                    <span>Support the Project</span>
+                </div>
+
+            </div>
+
+            </p>
+        </div>
+
+    </div>
+
+    </div>
+
+    <!-- Return To Top Button -->
+    <a href="#" class="back-to-top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </a>
+
+</footer>
+
+</html>

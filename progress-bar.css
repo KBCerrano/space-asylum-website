@@ -1,0 +1,54 @@
+/* Progress bar track */
+.progress-track {
+  position: sticky;   /* or fixed */
+  top: 70px;          /* match your navbar height */
+
+  max-width: 1100px;
+  margin: 0 auto;
+  height: 6px;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 0 0 12px 12px;
+  overflow: hidden;
+  border-left: 1px solid rgba(0, 255, 85, 0.3);
+  border-right: 1px solid rgba(0, 255, 85, 0.3);
+  border-bottom: 1px solid rgba(0, 255, 85, 0.3);
+  position: sticky;
+  z-index: 1000;
+}
+
+/* Actual progress */
+.progress-bar {
+  width: 0%;
+  height: 100%;
+  background: linear-gradient(90deg, #00ff55, #7dffb2);
+  box-shadow: 0 0 10px rgba(0, 255, 85, 0.45);
+  transition: width 0.08s linear;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Page content */
+.page-content {
+  max-width: 1100px;
+  margin: 40px auto;
+  padding: 0 20px 80px;
+}
+
+.content-block {
+  min-height: 80vh;
+  padding: 40px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.content-block h1,
+.content-block h2 {
+  margin-bottom: 16px;
+  color: #00ff55;
+}
+
+.content-block p {
+  max-width: 700px;
+  line-height: 1.6;
+  color: #d9def0;
+}

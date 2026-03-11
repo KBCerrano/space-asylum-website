@@ -1,0 +1,62 @@
+/* Section wrapper */
+
+.feature-section{
+  padding:80px 20px;
+
+}
+
+/* Container prevents edge stretching */
+
+.feature-container{
+  max-width:1100px;
+  margin:0 auto;
+
+  display:flex;
+  align-items:center;
+  gap:50px;
+}
+
+/* Text column */
+
+.feature-text{
+  flex:1;
+}
+
+/* Title */
+
+.feature-title{
+  font-size:2rem;
+  margin-bottom:20px;
+  color:#00ff55;
+}
+
+/* Subtitle */
+
+.feature-subtitle{
+  line-height:1.6;
+  color:#d9def0;
+  margin-bottom:30px;
+}
+
+
+
+/* Image column */
+
+.feature-image{
+  flex:1;
+}
+
+.feature-image img{
+  width:100%;
+  border-radius:12px;
+}
+
+/* Responsive layout */
+
+@media (max-width:800px){
+
+  .feature-container{
+    flex-direction:column;
+  }
+
+}
