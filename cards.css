@@ -111,6 +111,10 @@ blockquote{
   padding-left: 50px;
   padding-right: 50px;
   background-color: rgba(22, 20, 23, 0.475);
+  border-left: #00FF55;
+  border-left-color: #00FF55;
+  border-left-width: 3px;
+
 }
 
 .quoteName{
