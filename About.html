@@ -21,14 +21,19 @@
 
 <header class="site-header">
 
+</header>
+
+
+<body style="background-color: black;">
+
   <nav class="navbar">
-    <div class="nav-logo">SPACE ASYLUM</div>
-
-
+    <a href="index.html" style="text-decoration: none;">
+      <div class="nav-logo">SPACE ASYLUM</div>
+    </a>
     <ul class="nav-links">
       <li><a href="index.html">Home</a></li>
-      <li><a href="">About</a></li>
-      <li><a href="#">Support</a></li>
+      <li><a href="About.html">About</a></li>
+      <li><a href="Support.html">Support</a></li>
     </ul>
   </nav>
 
@@ -37,14 +42,9 @@
     <div class="progress-bar" id="progressBar"></div>
   </div>
 
-</header>
-
-
-<body style="background-color: black;">
-
 
   <!-- Left-aligned title cell -->
-  <section class="cards-section" style="background-image: none; margin-bottom: 500px;">
+  <section class="cards-section" style="background-image: none; margin-bottom: 0px;">
 
     <div class="cards-container" style="  justify-content: left;">
       <h2 class="fade-up" class="fade-in" style="text-align: left; margin-right: 50px;">
@@ -52,25 +52,23 @@
       </h2>
 
       <p class="text-container" style="text-align: left; color: white">
-        K.B Cerrano is Canadian born comic book artist of science fiction and fantasy. Author of
+        Cerrano is Canadian born comic book artist of science fiction and fantasy. Author of
         his debut science fiction space opera comic book <i>Space Asylum</i>.
         <br><br>Cerrano earned his Honours BSc in Statistics with a minor in Philosophy from the University of Ottawa in
-        2025. Inspired by his passion for science and philosophy, he creates stories of intellectual comedy meant for all audiences. Fueled by coffee.
+        2025. Inspired by his passion for science and philosophy, he creates stories of intellectual comedy meant for
+        all audiences. Fueled by coffee.
       </p>
     </div>
   </section>
 
 
+  <section class="cards-section" style="background-image: none; margin-bottom: 0px;">
 
-  </section>
-
-
-  <section>
-    <div class="section-container">
-
-      <div class="text-column">
-        <h1 style="text-align: left" class="fade-up" class="fade-in">
-          The Vision</h1>
+    <div class="cards-container" style="  justify-content: left;">
+      
+      <div class = "text-container">
+      <h2 class="fade-up" class="fade-in" style="text-align: left; margin-right: 50px;">The Vision</h2>
+        
         <p class="p-white" style="text-align: left;">
           Space Asylum is my passionate debut project - a comic book series I originally started during the 2019
           pandemic (while also studying the perilously annoying proofs of limit theorems).
@@ -84,20 +82,14 @@
         </p>
       </div>
 
-      <div class="image-column">
-        <!--<img src="images/Instagram post - 1.png" alt="Spaceship"-->
-        <div class="blackhole-container">
+      <div class="text-container" style="text-align: left;">
+           <img class="image-container" src="images\framte-adjusted-blackhole-gif.gif">
 
-          <img src="images\blackhole-middle.png" class="spin-slow" alt="Spaceship">
-        </div>
       </div>
-
     </div>
   </section>
 
 
-  <!--This is a javascript for the progress bar. It is important to have this at the bottom of the body tag so that HTML is loaded first and then the bar is applied at the end.-->
-  <script src="progress-bar.js"></script>
 
   <script>
     const disc = document.getElementById("scrollSpinImage");
@@ -109,6 +101,19 @@
     });
   </script>
 
+  <!--This is a javascript for the progress bar. It is important to have this at the bottom of the body tag so that HTML is loaded first and then the bar is applied at the end.-->
+
+  <script>
+    const progressBar = document.getElementById("progressBar");
+
+    window.addEventListener("scroll", () => {
+      const scrollTop = window.scrollY;
+      const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+      const scrollPercent = (scrollTop / docHeight) * 100;
+
+      progressBar.style.width = scrollPercent + "%";
+    });
+  </script>
 
 
 </body>
@@ -119,32 +124,62 @@
 
     <!-- Left Column -->
     <div class="footer-left">
-      <div class="nav-logo" style="text-align: left;">SPACE ASYLUM</div>
+      <div class="nav-logo" style="text-align: left; font-size: 30px">SPACE ASYLUM</div>
       <p style="color:white; text-align: left;">
         Written by K.B Cerrano
-        <br>
-        <a href="mailto:kbcerrano@gmail.com">kbcerrano@gmail.com</a>
+
         <br>
         © Copyright 2026 - All Rights Reserved By KBC Books.
       </p>
     </div>
 
+    <!-- Middle Column -->
+    <div class="footer-left">
+      <h2 style="font-size: 30px; margin-top: 0px; text-align: left; ">Contact</h2>
+      <div class="link-list">
+        <a href="mailto:kbcerrano@gmail.com">kbcerrano@gmail.com</a>
+      </div>
+    </div>
+
     <!-- Right Column -->
     <div class="footer-right">
+      <h2 style="font-size: 30px; margin-top: 0px; text-align: left; ">Social Links</h2>
+      <div class="link-list">
 
-      <div class="social-icons">
-        <p style="color: white; text-align: left;">
+        <div class="link-item">
+          <a href="https://www.instagram.com/official_space_asylum/">
+            <img src="images\icons\instagram-icon.png" alt="Instagram">
+          </a>
+          <span>Follow on Instagram</span>
+        </div>
 
-          <a href="https://www.instagram.com/official_space_asylum/"><i class="fa-brands fa-instagram"></i></a>
+        <div class="link-item">
+          <a href="https://x.com/Cerrano152963">
+            <img src="images\icons\x-icon.png" alt="X">
+          </a>
+          <span>Follow on X</span>
+        </div>
 
-          <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+        <div class="link-item">
+          <a href="https://www.facebook.com/profile.php?id=61585006997337">
+            <img src="images\icons\facebook-icon.png" alt="Facebook">
+          </a>
+          <span>Join on Facebook</span>
+        </div>
 
-          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+        <div class="link-item">
+          <a href="support.html">
+            <img src="images\icons\sa-logo-green.png" alt="Support">
+          </a>
+          <span>Support the Project</span>
+        </div>
 
-        </p>
       </div>
 
+      </p>
     </div>
+
+  </div>
 
   </div>
 

@@ -107,8 +107,8 @@
 
 blockquote {
   padding: 15px;
-  padding-left: 50px;
-  padding-right: 50px;
+  padding-left: 30px;
+  padding-right: 30px;
   background-color: rgba(22, 20, 23, 0.475);
   border-left: #00FF55;
   border-left-color: #00FF55;
@@ -120,4 +120,5 @@ blockquote {
   text-align: right;
   font-weight: bold;
   color: #00FF55;
+  margin-top: 8px;
 }
