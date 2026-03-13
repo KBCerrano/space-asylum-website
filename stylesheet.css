@@ -155,7 +155,7 @@ html{
     border: 0px;
     margin: 0px;
     padding: 0px;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
 }
 h1{
   font-family: "Audiowide", sans-serif;
@@ -223,7 +223,7 @@ container{
 
 
 body{
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
     
     background-repeat: no-repeat;
     background-position: center;
