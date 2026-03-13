@@ -32,6 +32,7 @@ html{
 .footer-left a {
   color: #00ff55;
   text-decoration: none;
+  max-width: 410px;
 }
 
 /* Social icons */
@@ -121,4 +122,11 @@ html{
 
 .link-item span {
   font-size: 16px;
+}
+
+
+social-section-image{
+  max-width: 45px;
+  max-height: 45px;
+  object-fit: contain;
 }
