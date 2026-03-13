@@ -65,6 +65,7 @@ container{
 
    position: sticky;
    top: 0;
+  z-index: 1000;
 
   max-width: 1100px;          /* keeps it from stretching full width */
   margin: 0 auto;             /* centers it */
@@ -337,6 +338,7 @@ body{
   justify-content: center;  /* horizontal centering */
   align-items: center;      /* vertical centering */
 
+   text-align:center;
   min-height: 400px;     /* gives the section height so vertical centering works */
   
   background-image: url("images/aesthetic-physics.png");
